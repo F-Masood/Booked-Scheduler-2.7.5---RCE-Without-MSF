@@ -14,10 +14,10 @@ The vulnerability requires authenticated user (admin login) as a pre-req. After 
 2. Navigate to manage_theme.php page. 
 ![alt text](https://github.com/F-Masood/Booked-Scheduler-2.7.5---RCE-Without-MSF/blob/main/02.png)
 
-3. Under **Favicon** section, upload your malicious **php** script e.g. I am uploading a file **codeexec.php** Also, I am using Burp to intercept my request, although Burp part is not necessary.
+3. Under **Favicon** section, upload your malicious **php** script e.g. I am uploading a file **rce.php** Also, I am using Burp to intercept my request, although Burp part is not necessary.
 ![alt text](https://github.com/F-Masood/Booked-Scheduler-2.7.5---RCE-Without-MSF/blob/main/03.png)
 
-4. The file is ready to be uploaded. The highlighted section shows the contents of codeexec.php. You can grab this **codeexec.php** from here -> https://raw.githubusercontent.com/F-Masood/php-backdoors/main/codeexec.php
+4. The file is ready to be uploaded. The highlighted section shows the contents of codeexec.php. You can grab this **codeexec.php** from here -> https://raw.githubusercontent.com/F-Masood/php-backdoors/main/rce.php
 ![alt text](https://github.com/F-Masood/Booked-Scheduler-2.7.5---RCE-Without-MSF/blob/main/04.png)
 
 5. Navigate to **custom-favicon.php** file, give some command as input and you have achieved **RCE**. Wohoooo!!!
